@@ -8,4 +8,6 @@ class Todo(models.Model):
     created = models.DateField(auto_now_add=True)
     updated = models.DateField(auto_now=True)
 
+    def _str_(self):
+        return self.task
     
